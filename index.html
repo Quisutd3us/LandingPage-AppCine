@@ -234,14 +234,35 @@
       </div>
     </div>
     <div class="row">
-      <div class="col"></div>
-      <div class="col-8">
-        <input type="text" name="nombre" id="">
-        <input type="email" name="email" id="">
-        <textarea rows="5" cols="10"></textarea>
-        <button type="submit">Enviar</button>
+      <div class="col-md-8 offset-md-2">
+        <form>
+          <div class="form-group">
+            <div class="col-12">
+              <input type="text" name="nombre" placeholder="Nombre" class="form-control form-control-lg">
+              <small id="emailHelp" class="form-text text-muted">Ingrese su Nombre y Apellido</small>
+            </div>
+          </div>
+          <!-- fin input nombre -->
+          <div class="form-group">
+            <div class="col-12">
+              <input type="email" name="email" placeholder="Correo Electronico" class="form-control form-control-lg">
+              <small id="emailHelp" class="form-text text-muted">No compartimos sus datos con terceros</small>
+            </div>
+          </div>
+          <!-- fin input email -->
+          <div class="form-group">
+            <div class="col-12">
+              <textarea rows="5" cols="10" placeholder="Mensaje" class="form-control form-control-lg"></textarea>
+            </div>
+          </div>
+          <!-- fin input comentarios -->
+          <div class="form-group">
+            <div class="col-12">
+              <button type="submit" class="btn btn-primary">Enviar</button>
+            </div>
+          </div>
+        </form>
       </div>
-      <div class="col"></div>
     </div>
   </section>
   <!-- fin section id#soporte -->
