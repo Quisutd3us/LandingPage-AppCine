@@ -99,6 +99,15 @@
     p {
         @include pSass;
     } // Estilos secciones
+    .nav {
+        background-color: $azul2;
+        .nav-link{
+            color: white;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+    }
+
     #sectionPrincipal {
         /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#0c233b+0,1e3c5a+100 */
         background: #0c233b;
@@ -282,6 +291,7 @@
     } // finalizando Parallax
     #sectionDescargar {
         // @include helper(red);
+        padding-bottom: 0rem;
         .row:nth-child(1) {
             // @include helper(green);
             h1 {
@@ -320,6 +330,46 @@
                         border-radius: 10rem;
                         font-weight: 700;
                         font-size: 1rem;
+                    }
+                }
+            }
+        }
+    } // Finalizando #sectionDescargar
+    #sectionContacto {
+        // @include helper(red);
+        background-color: $azul1;
+        .row:nth-child(1) {
+            // @include helper(red);
+            h1,
+            h3 {
+                color: whitesmoke;
+            }
+        }
+        .row:nth-child(2) {
+            // @include helper(red);
+            form {
+                .form-group {
+                    .col-12 {
+                        input,
+                        textarea {
+                            background-color: $azul1;
+                            border: solid 3px whitesmoke;
+                            border-radius: 1rem;
+                        }
+                        input::placeholder,
+                        textarea::placeholder {
+                            color: rgba(245, 245, 245, 0.3) !important;
+                        }
+                        small {
+                            color: rgba(245, 245, 245, 0.7) !important;
+                        }
+                        button {
+                            padding: 0rem 3rem;
+                            background-color: whitesmoke;
+                            border: solid 3px white;
+                            font-weight: 700;
+                            color: $azul3;
+                        }
                     }
                 }
             }

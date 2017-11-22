@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    $('section#pantallas a').on('click', function () {
+    $('section#sectionPantallas a').on('click', function () {
         $('#exampleModal img').attr('src', $(this).attr('data-image-url'));
     });
 });
