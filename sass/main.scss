@@ -279,4 +279,49 @@
                 }
             }
         }
+    } // finalizando Parallax
+    #sectionDescargar {
+        // @include helper(red);
+        .row:nth-child(1) {
+            // @include helper(green);
+            h1 {
+                margin: 2rem 0rem;
+            }
+        }
+        .row:nth-child(2) {
+            .col-md-6:nth-child(1) {
+                // @include helper(blue);
+                box-shadow: inset -7px -7px 12px -2px rgba(0, 0, 0, 0.171);
+                z-index: 1;
+            }
+            .col-md-6:nth-child(2) {
+                background: url('../img/DESCAR~1.PNG') left bottom no-repeat;
+                background-size: cover;
+                background-color: $grisFondo;
+                z-index: 2;
+                .row:nth-child(1) {
+                    h3 {
+                        margin-top: 5rem;
+                        font-weight: 700;
+                        font-size: 2rem;
+                    }
+                }
+                .row:nth-child(2) {
+                    // @include helper(red);
+                    margin-top: 2rem;
+                    .col-sm-6 {
+                        // @include helper(purple);
+                    }
+                    h3 {
+                        width: 70%;
+                        margin: 0 auto;
+                        padding: 1rem;
+                        border: solid 2px $azul2;
+                        border-radius: 10rem;
+                        font-weight: 700;
+                        font-size: 1rem;
+                    }
+                }
+            }
+        }
     }
